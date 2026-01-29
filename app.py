@@ -23,4 +23,5 @@ if st.button("메뉴 추천받기"):
     with st.spinner('AI가 메뉴를 고민 중입니다...'):
         response = model.generate_content(prompt)
         st.success("추천 결과입니다!")
+
         st.write(response.text)
